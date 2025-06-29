@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meu Treino</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Logo Meu Treino" class="logo" />
+    <h1>MEU TREINO</h1>
+    <button id="comecar">COMEÇAR AGORA</button>
+  </header>
+
+  <main>
+    <section class="objetivos">
+      <button class="objetivo">Perder Peso</button>
+      <button class="objetivo">Ganhar Massa</button>
+      <button class="objetivo">Definir</button>
+    </section>
+
+    <section class="exercicio">
+      <h2>Vídeos de Exercícios</h2>
+      <div class="card">
+        <img src="levantamento-terra.png" alt="Levantamento Terra" />
+        <p>Levantamento Terra<br>3 Séries x 10-12 Reps</p>
+      </div>
+    </section>
+
+    <section class="diario">
+      <h2>Diário de Treino</h2>
+      <label><input type="checkbox" /> Feito</label>
+      <label><input type="checkbox" /> Faltou</label>
+      <canvas id="graficoTreino" width="400" height="200"></canvas>
+    </section>
+
+    <section class="nutricao">
+      <h2>Nutrição e Suplementos</h2>
+      <a href="cardapio_perder_peso.pdf" target="_blank">
+        <button>Cardápio Perder Peso</button>
+      </a>
+      <a href="cardapio_ganhar_massa.pdf" target="_blank">
+        <button>Cardápio Ganhar Massa</button>
+      </a>
+      <a href="guia_suplementos.pdf" target="_blank">
+        <button>Guia de Suplementos</button>
+      </a>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
